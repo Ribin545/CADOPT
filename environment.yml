@@ -1,0 +1,16 @@
+name: cad-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pythonocc-core      # provides the `OCC` module (STEP file handling)
+  - pip
+  - pip:
+    - polyscope         # 3D UI viewer
+    - libigl            # provides the `igl` module (geometry processing)
+    - trimesh           # mesh validation/IO
+    - loguru            # logging
+    - xatlas            # UV atlas packing
